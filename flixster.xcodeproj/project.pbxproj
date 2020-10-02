@@ -103,7 +103,6 @@
 				5AF79F68D3D7C5109BB2C9CC /* Pods-flixsterTests.debug.xcconfig */,
 				6D30DC816525091757C47F56 /* Pods-flixsterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -134,12 +133,12 @@
 			children = (
 				A42D1B3B251EFFBB009DA440 /* AppDelegate.swift */,
 				A42D1B3D251EFFBB009DA440 /* SceneDelegate.swift */,
+				A4103EA9251F16300001D98F /* MovieCell.swift */,
+				A42D1B74251F036F009DA440 /* MoviesViewController.swift */,
 				A42D1B41251EFFBB009DA440 /* Main.storyboard */,
 				A42D1B44251EFFBC009DA440 /* Assets.xcassets */,
 				A42D1B46251EFFBC009DA440 /* LaunchScreen.storyboard */,
 				A42D1B49251EFFBC009DA440 /* Info.plist */,
-				A42D1B74251F036F009DA440 /* MoviesViewController.swift */,
-				A4103EA9251F16300001D98F /* MovieCell.swift */,
 			);
 			path = flixster;
 			sourceTree = "<group>";
@@ -593,6 +592,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W469A8F2E3;
 				INFOPLIST_FILE = flixster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -613,6 +613,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W469A8F2E3;
 				INFOPLIST_FILE = flixster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

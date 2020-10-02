@@ -26,7 +26,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
            // This will run when the network request returns
             if let error = error {
                 print(error.localizedDescription)
-            } else if let data = data {
+            }
+            else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 
                 self.movies = dataDictionary["results"] as! [[String:Any]]
@@ -52,11 +53,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let posterPath = movie["poster_path"] as! String
         let posterUrl = URL(string: baseUrl + posterPath)!
         
-        cell.poster.af_setImage(withURL: posterUrl)
+        cell.poster.af.setImage(withURL: posterUrl)
         
         return cell
     }
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -64,6 +64,5 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }
